@@ -3,37 +3,18 @@
 
 <head>
     <title>MostCoupon</title>
-    <!-- Latest compiled and minified CSS -->
+    <!-- Bootstrap & jQuery -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- jQuery library -->
     <script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
     <!-- jQuery UI -->
     <script type="text/javascript" src="lib/jquery-ui.js"></script>
-
+    <script type="text/javascript" src="lib/jquery.validate.min.js"></script>
     <!-- Popup js -->
     <script src="js/popup.js"></script>
-    <!-- Style -->
-    <style type="text/css">
-        body {
-            width: 500px;
-            height: 500px
-        }
-
-        .form-add {
-            margin: 20px
-        }
-
-        div,
-        input,
-        textarea {
-            margin-top: 10px
-        }
-
-        #container {
-            /*display: none*/
-        }
-    </style>
 </head>
 
 <body>
@@ -49,13 +30,29 @@
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
         required="true" autofocus="true">
     </p> -->
+
+    <div class="container">
+        <form class="form-signin" id="frmSignIn">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            <label for="inputEmail" class="sr-only">Email</label>
+            <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email address" autofocus="true" value="ptlevan@gmail.com">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" required="true" value="123456">
+            <hr>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" id="signIn">Sign in</button>
+            <label class="text-danger" id="lblError"></label>
+        </form>
+    </div>
+
     <form class="form-add">
+        <label id="welcome" class="text-success"></label>
+        <span class="glyphicon glyphicon-log-out" aria-hidden="true" id="logout"></span>
         <h3>Add coupon</h3>
         <!-- Author -->
         <input type="hidden" id="author" value="123ASD">
         <!-- Store -->
         <input type="hidden" id="selectedStore">
-        <input type="text" id="store_id" autofocus="true" placeholder="Enter some characters to start find store" style="width:300px">
+        <input type="text" id="searchStore" placeholder="Enter some characters to start find store" style="width:300px">
         <span class="glyphicon glyphicon-remove" aria-hidden="true" id="remove"></span>
 
         <div id="container">

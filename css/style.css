@@ -1,0 +1,23 @@
+body {
+    width: 500px;
+    height: 500px;
+}
+
+.form-add {
+    margin: 20px;
+    display: none;
+}
+
+div,
+input,
+textarea {
+    margin-top: 10px;
+}
+
+#container {
+    display: none;
+}
+
+#logout, #remove{
+    cursor: pointer;
+}

@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
               discount : $('#discount').val(),
               expire_date : $('#expire_date').val(),
               event_id : $('#event_id').val(),
-              store_id : $('#store_id').val(),
+              searchStore : $('#searchStore').val(),
               status : $('#status').val(),
               author : $('#author').val(),
               publish_date : $('#publish_date').val(),
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
           discount : $('#discount').val(),
           expire_date : $('#expire_date').val(),
           event_id : $('#event_id').val(),
-          store_id : $('#store_id').val(),
+          searchStore : $('#searchStore').val(),
           status : $('#status').val(),
           author : $('#author').val(),
           publish_date : $('#publish_date').val(),
@@ -102,7 +102,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Get events
   $.post(API_PATH + 'event/list', {year : new Date().getFullYear()}, function(response){
-    console.log(response);
       $.each(response, function(index, value){
           $('#event_id').append(
             $('<option></option>').attr('value', value.id).text(value.name)
@@ -110,19 +109,11 @@ document.addEventListener('DOMContentLoaded', function() {
       })
   });
 
-  // Get categories
-  $.post(API_PATH + 'category/list', {storeId : $('#store_id').val()}, function(response){
-      $.each(response, function(index, value){
-          $('#categories_id').append(
-            $('<option></option>').attr('value', value.id).text(value.name)
-          );
-      })
-  })
   // Find store
-  $( "#store_id" ).autocomplete({
+  $( "#searchStore" ).autocomplete({
       source: function (request, response) {
          $.ajax({
-            url: API_PATH + 'store/filter/' + $('#store_id').val(),
+            url: API_PATH + 'store/filter/' + $('#searchStore').val(),
             type: 'GET',
             data: {},
             success: function (res) {
@@ -136,16 +127,78 @@ document.addEventListener('DOMContentLoaded', function() {
          });
       },
       select: function(event, ui) { // After selected
-          $('#store_id').val(ui.item.label);
+          $('#searchStore').val(ui.item.label);
           $('#selectedStore').val(ui.item.value);
+          // Get categories
+          $.post(API_PATH + 'category/list', {storeId : $('#selectedStore').val()}, function(response){
+              if(response != '404'){
+                  $.each(response, function(index, value){
+                      $('#categories_id').append(
+                        $('<option></option>').attr('value', value.id).text(value.name)
+                      );
+                  })
+              }
+          })
+          // Show form add coupon
           $('#container').show();
           return false;
       },
       minLength: 2 // Number of characters before start search
   });
+
   // Remove selected store
   $('#remove').click(function(){
-      $('#store_id').val('');
+      $('#').val('');
+  })
+
+  // Sign in
+  $('#signIn').click(function(){
+      $("#frmSignIn").validate({
+          rules: {
+              inputEmail: {
+                  required: true,
+                  email: true
+              },
+              inputPassword: {
+                  required: true,
+                  // minlength: 5
+              }
+          },
+          messages: {
+              inputPassword: {
+                  required: "Please provide a password",
+                  // minlength: "Your password must be at least 5 characters long"
+              },
+              inputEmail: "Please enter a valid email address"
+          },
+          submitHandler: function(form) {
+              var data = {
+                  email : $('#inputEmail').val(),
+                  password : $('#inputPassword').val()
+              };
+              $.post(API_PATH + 'user/authenticate', data, function(response){
+                  console.log(response);
+                  if(response != '404'){
+                      localStorage['user'] = response;
+                      $('.container').hide();
+                      $('.form-add').show();
+                      $('#searchStore').focus();
+                      user = jQuery.parseJSON(localStorage['user']);
+                      $('#welcome').text('Have a nice day ' + user.username + ' :)');
+                  }else{
+                      $('#lblError').text('Oop!!! Something wrong');
+                  }
+              })
+          }
+      });
+
+  })
+
+  // Logout
+  $('#logout').click(function(){
+      localStorage['user'] = [];
+      $('.form-add').hide();
+      $('.container').show();
   })
 
 }) /*End DOMContentLoaded*/
