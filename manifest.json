@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "MostCoupon",
+  "description": "Develop by HaiHT",
+  "version": "1.0",
+
+  "browser_action":
+  {
+    // "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions":
+  [
+    "activeTab",
+    "clipboardRead",
+    "clipboardWrite",
+    "notifications"
+  ],
+  "background":{
+    "scripts":["js/background.js"]
+  },
+  "content_scripts":
+  [
+    {
+      // "matches": ["http://www.google.co.in/*","https://www.google.co.in/*"],
+      "matches": ["<all_urls>"],
+      "run_at": "document_end",
+      // "matches":
+      // [
+      //   "http://web.airdroid.com/*"
+      // ],
+      "js":
+      [
+        "js/myscript.js",
+        "lib/jquery-2.1.4.min.js",
+        "lib/jquery-ui.js"
+      ]
+    }
+  ]
+}

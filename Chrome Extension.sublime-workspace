@@ -1,0 +1,529 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"noti",
+				"notification"
+			],
+			[
+				"alert",
+				"alert('ok"
+			],
+			[
+				"ap",
+				"append"
+			],
+			[
+				"sty",
+				"style	(popup.js)"
+			],
+			[
+				"my",
+				"myRS"
+			],
+			[
+				"key",
+				"keyCode"
+			],
+			[
+				"val",
+				"value	Attr"
+			],
+			[
+				"in",
+				"input	(myscript.js)"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"inp",
+				"inputEmail"
+			],
+			[
+				"btn",
+				"btnLogin"
+			],
+			[
+				"get",
+				"getElementsByClassName"
+			],
+			[
+				"log",
+				"logOut"
+			],
+			[
+				"fun",
+				"function	(TestController.php)"
+			],
+			[
+				"ca",
+				"case2"
+			],
+			[
+				"check",
+				"check"
+			],
+			[
+				"chec",
+				"check"
+			],
+			[
+				"get_",
+				"get_shareasale	(index.ctp)"
+			],
+			[
+				"sim",
+				"simple_html_dom"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"scr",
+				"scroll"
+			],
+			[
+				"aff",
+				"affiliate_url	(index.ctp)"
+			],
+			[
+				"fin",
+				"find	(RtmnController.php)"
+			],
+			[
+				"erro",
+				"errors"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"resp",
+				"response"
+			],
+			[
+				"arr",
+				"arrStores"
+			],
+			[
+				"jso",
+				"json_encode"
+			],
+			[
+				"store",
+				"stores"
+			],
+			[
+				"Store",
+				"Stores	(index.ctp)"
+			],
+			[
+				"most",
+				"mostcoupon	(mcus.php)"
+			],
+			[
+				"de",
+				"details"
+			],
+			[
+				"dis",
+				"discount	(StoresController.php)"
+			],
+			[
+				"coupo",
+				"couponDiscount"
+			],
+			[
+				"control",
+				"controller"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"Confi",
+				"Configure"
+			],
+			[
+				"data",
+				"dataSave"
+			],
+			[
+				"inner",
+				"innertext"
+			],
+			[
+				"conte",
+				"content"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"th",
+				"this"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git:pull",
+				"Git: Pull"
+			],
+			[
+				"git:fet",
+				"Git: Fetch"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Dell/Desktop/Projects/FrontEnd AngularJs.sublime-project",
+		"/E/chrome extension - MostCoupon/Chrome Extension.sublime-project",
+		"/C/Users/Dell/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Dell/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/E/chrome extension - MostCoupon/background.html",
+		"/E/chrome extension - MostCoupon/demo.txt",
+		"/E/chrome extension/demo.txt",
+		"/E/chrome extension/manifest.json",
+		"/E/chrome extension/background.js",
+		"/E/chrome extension/myscript.js",
+		"/E/chrome extension/popup.html",
+		"/E/chrome extension/popup.js",
+		"/C/Users/Dell/Downloads/jquery-2.1.4.js",
+		"/C/Users/Dell/Desktop/Projects/chrome extension",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/portal_v1/app/View/Elements/left_panel.ctp",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/portal_v1/app/Controller/ImportController.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/portal_v1/app/View/Import/index.ctp",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/portal_v1/app/Lib/shareasale.html",
+		"/C/Bitnami/wampstack-5.4.40-0/php/php.ini",
+		"/C/Users/Dell/Desktop/1.html",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/rtmn/portal/app/Controller/RtmnController.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/rtmn/portal/app/View/Rtmn/index.ctp",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/portal_v1/app/Config/core.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/portal_v1/app/Model/User.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/portal_v1/app/Vendor/simple_html_dom.php",
+		"/C/Users/Dell/Desktop/stores.sql",
+		"/C/Users/Dell/Desktop/ax.sql",
+		"/C/Users/Dell/Desktop/ton hop coupon",
+		"/C/Users/Dell/Desktop/1.sql",
+		"/C/Users/Dell/Desktop/lo.dbf",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/api/app/Controller/CouponsController.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/app/webroot/js/stores/details.js",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/app/Controller/StoresController.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/portal_v1/app/Controller/UsersController.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/app/View/Layouts/manage.ctp",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/app/View/Elements/header.ctp",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/app/Controller/AppController.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/.htaccess",
+		"/C/Users/Dell/AppData/Local/Temp/fz3temp-1/.htaccess 2",
+		"/C/Users/Dell/AppData/Local/Temp/fz3temp-1/.htaccess 3",
+		"/C/Users/Dell/AppData/Local/Temp/fz3temp-1/.htaccess",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/app/Config/mcus.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/api/app/Controller/UsersController.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/app/webroot/blog/wp-config-sample.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/app/Lib/Seo/SeoLibs.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/app/View/Stores/details.ctp",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/robots.txt",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/app/View/Categories/details.ctp",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/portal_v1/app/Model/UsersFrontend.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/app/Controller/HomeController.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/app/Config/permit.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/app/Controller/ErrorsController.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/lib/Cake/View/Errors/missing_action.ctp",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/Frontend/.git/config",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/app/View/Coupons/get_code.ctp",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/app/View/Deals/get_code.ctp",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/portal_v1/app/webroot/js/products/index.js",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/portal_v1/app/View/Products/index.ctp",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/portal_v1/app/Controller/DealsController.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/portal_v1/app/Config/mcus.php.production",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/portal_v1/app/Config/mcus.php.development",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/mostcoupon/app/View/Home/index.ctp",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/MostCoupon/.gitignore",
+		"/C/Users/Dell/Desktop/1.jpg",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/rtmn/portal/app/webroot/js/rtmn/index.js",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/rtmn/portal/app/Config/core.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/rtmn/portal/app/Model/User.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/rtmn/portal/app/Controller/UsersController.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/rtmn/portal/app/Config/database.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/rtmn/portal/app/View/Elements/left_panel.ctp",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/rtmn/portal/app/Model/Rtmn.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/rtmn/.git/config",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/rtmn/portal/app/Config/mcus.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/rtmn/app/Config/database.php",
+		"/C/Bitnami/wampstack-5.4.40-0/apache2/htdocs/rtmn/app/Config/mcus.php",
+		"/C/Users/Dell/AppData/Roaming/Sublime Text 3/Packages/User/trailing_spaces.sublime-settings",
+		"/C/Users/Dell/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 99.0,
+		"where_history":
+		[
+			"C:\\Bitnami\\wampstack-5.4.40-0\\apache2\\htdocs\\MostCoupon\\portal_v1\\app\\",
+			"C:\\Bitnami\\wampstack-5.4.40-0\\apache2\\htdocs\\MostCoupon\\",
+			"C:\\Bitnami\\wampstack-5.4.40-0\\apache2\\htdocs\\MostCoupon\\portal_v1\\app\\",
+			"C:\\Bitnami\\wampstack-5.4.40-0\\apache2\\htdocs\\MostCoupon\\mostcoupon\\lib\\Cake\\",
+			"C:\\Bitnami\\wampstack-5.4.40-0\\apache2\\htdocs\\MostCoupon\\portal_v1\\app\\webroot\\js\\products\\index.js",
+			"C:\\Bitnami\\wampstack-5.4.40-0\\apache2\\htdocs\\MostCoupon\\portal_v1\\app\\Model",
+			"C:\\Bitnami\\wampstack-5.4.40-0\\apache2\\htdocs\\MostCoupon\\portal_v1\\app\\View",
+			"C:\\Bitnami\\wampstack-5.4.40-0\\apache2\\htdocs\\MostCoupon\\portal_v1\\app\\Controller",
+			"C:\\Bitnami\\wampstack-5.4.40-0\\apache2\\htdocs\\MostCoupon\\mostcoupon\\app\\webroot\\js",
+			"C:\\Bitnami\\wampstack-5.4.40-0\\apache2\\htdocs\\MostCoupon\\mostcoupon\\app\\Controller",
+			"C:\\Bitnami\\wampstack-5.4.40-0\\apache2\\htdocs\\MostCoupon\\mostcoupon\\app\\View",
+			"C:\\Bitnami\\wampstack-5.4.40-0\\apache2\\htdocs\\MostCoupon\\mostcoupon",
+			"C:\\Bitnami\\wampstack-5.4.40-0\\apache2\\htdocs\\MostCoupon\\portal_v1"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"’",
+			"‘",
+			"myMain",
+			"111",
+			"file_get_html",
+			"memory_limit ",
+			"checkLinkSynergy",
+			"keyword",
+			"check",
+			"btnCheck",
+			"getStoresLike",
+			"<hr>",
+			"errors",
+			"getWithCondition",
+			"File",
+			"'",
+			",",
+			"'stores-copy'",
+			"6PM",
+			"54a3bcf1-9728-437b-9044-51370a000d0d",
+			"stores-copy",
+			"INSERT INTO stores",
+			"'",
+			"`",
+			"COLLATE \"default\"",
+			"\"",
+			"INSERT INTO",
+			"remove",
+			"function",
+			"abc.com",
+			"HOME",
+			"please login",
+			"404",
+			" ['",
+			"expire_date_greater",
+			"query",
+			"class=\"vs\"",
+			"}\n",
+			"authenticate",
+			"login",
+			"_generateSalt",
+			"missing_action",
+			"AppError",
+			"PSubMess",
+			"vendor.description",
+			"vendor.description_coupons",
+			"vendor.description",
+			"store.store.status",
+			"Config",
+			"Url",
+			"user_id",
+			"saveDeal",
+			"logo",
+			"saveDeal",
+			"logo",
+			"$scope.newCoupon.vendors",
+			"vendor",
+			"addDeal",
+			"vendor",
+			"descriptions",
+			"banner",
+			"login",
+			"default",
+			"Publish Date",
+			"$this->Store"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"MainFunction",
+			"100",
+			"btnCheck_linksynergy",
+			"",
+			"`",
+			"`stores-copy`",
+			"'stores-copy'",
+			"INSERT INTO stores-copy",
+			"`",
+			"'",
+			"",
+			"'",
+			"INSERT INTO stores ",
+			"mostcoupon.com"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Chrome Extension.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Dell\\Desktop\\Projects\\FrontEnd.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 244.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
