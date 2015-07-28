@@ -13,6 +13,10 @@
     <!-- jQuery UI -->
     <script type="text/javascript" src="lib/jquery-ui.js"></script>
     <script type="text/javascript" src="lib/jquery.validate.min.js"></script>
+    <!-- Moment JS -->
+    <script type="text/javascript" src="lib/moment-with-locales.js"></script>
+    <!-- Datetime picker -->
+    <script type="text/javascript" src="lib/bootstrap-datetimepicker.js"></script>
     <!-- Popup js -->
     <script src="js/popup.js"></script>
 </head>
@@ -30,36 +34,37 @@
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
         required="true" autofocus="true">
     </p> -->
-
-    <div class="container">
+<div class="container">
+    <div id="form-login">
         <form class="form-signin" id="frmSignIn">
             <h2 class="form-signin-heading">Please sign in</h2>
             <label for="inputEmail" class="sr-only">Email</label>
             <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email address" autofocus="true" value="ptlevan@gmail.com">
             <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" required="true" value="123456">
+            <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" value="123456">
             <hr>
             <button class="btn btn-lg btn-primary btn-block" type="submit" id="signIn">Sign in</button>
             <label class="text-danger" id="lblError"></label>
         </form>
     </div>
 
-    <form class="form-add">
+    <form id="form_add">
         <label id="welcome" class="text-success"></label>
         <span class="glyphicon glyphicon-log-out" aria-hidden="true" id="logout"></span>
         <h3>Add coupon</h3>
         <!-- Author -->
-        <input type="hidden" id="author" value="123ASD">
+        <input type="hidden" id="author" name="author">
         <!-- Store -->
-        <input type="hidden" id="selectedStore">
+        <input type="hidden" id="selectedStore" name="selectedStore">
         <input type="text" id="searchStore" placeholder="Enter some characters to start find store" style="width:300px">
         <span class="glyphicon glyphicon-remove" aria-hidden="true" id="remove"></span>
+        <label class="text-primary" id="lblCountry"></label>
 
-        <div id="container">
+        <div id="form_coupon">
             <!-- Title -->
-            <input type="text" id="title" class="form-control" placeholder="Title" required="true">
+            <input type="text" id="title" name="title" class="form-control" placeholder="Title">
             <!-- Description -->
-            <textarea id="description" class="form-control"></textarea>
+            <textarea id="description" name="description" class="form-control"></textarea>
             <hr>
             <!-- Coupon type -->
             <div class="input-group">
@@ -73,7 +78,8 @@
                 </select>
             </div>
             <!-- Code -->
-            <input type="text" id="coupon_code" class="form-control" placeholder="Code" required="">
+            <input type="text" id="coupon_code" name="coupon_code" class="form-control" placeholder="Code" >
+            <label id="coupon-code-error" class="error" style="display:none" for="coupon_code">Please enter coupon code</label>
             <hr>
             <!-- Discount -->
             <div class="input-group">
@@ -85,19 +91,17 @@
                     <option value="%">%</option>
                 </select>
             </div>
-            <input type="text" id="discount" class="form-control" placeholder="Discount value" required="">
+            <input type="text" id="discount" name="discount" class="form-control" placeholder="Discount value" >
             <hr>
-            <!-- Education & Training -->
-            <!-- <input type="text" id="categories_id" class="form-control" placeholder="Select categories" required="" value="5565bffd-3b14-42d3-81d2-4bef61af48f5"> -->
             <!-- Categories -->
             <div class="input-group">
                 <span class="input-group-addon">
                 Categories
             </span>
-                <select id="categories_id" class="form-control" multiple></select>
+                <select id="categories_id" name="categories_id" class="form-control" multiple></select>
             </div>
             <!-- Product link -->
-            <input type="text" id="product_link" class="form-control" placeholder="Link to product page" required="">
+            <input type="text" id="product_link" name="product_link" class="form-control" placeholder="Link to product page" >
             <!-- Exclusive -->
             <div class="input-group">
                 <span class="input-group-addon">
@@ -139,11 +143,15 @@
                 </select>
             </div>
             <!-- Tags -->
-            <input type="text" id="tags" class="form-control" placeholder="Tags" required="">
+            <input type="text" id="tags" class="form-control" placeholder="Tags" >
             <!-- Expire date -->
-            <input type="text" id="expire_date" class="form-control" placeholder="Expire date" required="" value="2015-07-23 02:53:47">
+            <div class='input-group col-sm-12 date'>
+                <input type='text' class="form-control" id='expire_date' placeholder="Expire date"/>
+            </div>
             <!-- Publish date -->
-            <input type="text" id="publish_date" class="form-control" placeholder="Publish date" required="" value="2015-07-23 02:53:47">
+            <div class='input-group col-sm-12 date'>
+                <input type='text' class="form-control" id='publish_date' name="publish_date" placeholder="Publish date"/>
+            </div>
             <!-- Status -->
             <div class="input-group">
                 <span class="input-group-addon">
@@ -157,12 +165,12 @@
             </div>
             <hr>
             <!-- Button -->
-            <button id="btnQuickAdd" type="button" class="btn btn-primary">Submit</button>
+            <button id="btnQuickAdd" type="submit" class="btn btn-primary">Submit</button>
             <!-- Message -->
             <label class="text-primary" id="message"></label>
         </div>
     </form>
-
+</div>
 </body>
 
 </html>

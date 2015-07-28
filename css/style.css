@@ -1,9 +1,14 @@
 body {
-    width: 500px;
-    height: 500px;
+    /*width: 500px;*/
+    /*height: 500px;*/
+    text-align: center;
 }
 
-.form-add {
+.container{
+    width: 800px;
+}
+
+#form_add {
     margin: 20px;
     display: none;
 }
@@ -14,10 +19,14 @@ textarea {
     margin-top: 10px;
 }
 
-#container {
+#form_coupon {
     display: none;
 }
 
 #logout, #remove{
+    cursor: pointer;
+}
+
+.date{
     cursor: pointer;
 }
